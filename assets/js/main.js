@@ -33,14 +33,24 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => observer.observe(section));
 
-// Mobile navigation toggle (requires HTML input#nav-toggle and label)
-const navToggle = document.getElementById('nav-toggle');
-const navMenu = document.querySelector('nav ul');
-if (navToggle) {
-  navToggle.addEventListener('change', () => {
-    navMenu.classList.toggle('hidden');
+// Mobile navigation toggle
+const menuButton = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (menuButton && mobileMenu) {
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
   });
 }
+
+// Close mobile menu when a link is clicked
+mobileMenu.querySelectorAll('a').forEach(link =>
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  })
+);
+
+
 
 // Scroll-reveal for any element with .reveal
 const revealElements = document.querySelectorAll('.reveal');
