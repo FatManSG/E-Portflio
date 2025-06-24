@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OptiFlow – Project Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="assets/css/style.css" rel="stylesheet"/>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <!-- Header / Nav (copy from index.html) -->
+  <header class="fixed top-0 w-full z-50 bg-opacity-80 backdrop-blur-md">
+    <div class="container mx-auto flex items-center justify-between p-6">
+      <a href="index.html#hero" class="text-2xl font-bold text-white">Mattias Lee</a>
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html#about"    class="text-gray-300 hover:text-blue-400">About</a>
+        <a href="index.html#skills"   class="text-gray-300 hover:text-blue-400">Skills</a>
+        <a href="index.html#projects" class="text-gray-300 hover:text-blue-400">Projects</a>
+        <a href="index.html#contact"  class="text-gray-300 hover:text-blue-400">Contact</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden text-gray-300 focus:outline-none">
+        <!-- mobile menu icon -->
+      </button>
+    </div>
+  </header>
+
+  <main class="pt-24">
+    <!-- Project Detail Section -->
+    <section class="py-20 container mx-auto px-6">
+      <h1 class="text-4xl font-bold text-white mb-4">High-End PC Build – ML Workstation</h1>
+      <p class="text-gray-300 mb-8">
+        Built and tuned a custom ML workstation with Ryzen 9 9950X3D, RTX 5090, and DDR5 RAM. Optimized BIOS, airflow, and validated performance for reliability under heavy loads.
+      </p>
+      <img src="assets/images/PCbuilding.jpg" alt="PC Build screenshot" class="w-full rounded-lg mb-6"/>
+
+      <h2 class="text-2xl font-semibold text-white mb-2">Long Description</h2>
+      <p class="text-gray-300 mb-8">
+        I did an end-to-end assembly and tuning of a custom workstation engineered for machine-learning model training and everyday productivity. The system is built around an AMD Ryzen 9 9950X3D CPU paired with an NVIDIA RTX 5090 GPU, 96 GB of DDR5-6400 RAM running at full XMP profiles, on an ASUS ROG Strix X870E-E Gaming WiFi (AM5) motherboard, all powered by a Corsair HXi 1500 W PSU housed in a Lian Li 217 chassis. I optimized cable routing and case airflow for efficient cooling, resolved an initial Windows boot failure via a clean USB reinstall, and enabled maximum memory bandwidth in the BIOS. Finally, I validated rock-solid reliability under sustained full-load conditions using OCCT stress tests. The result is a stable, high-throughput platform that accelerates intensive training jobs and delivers seamless day-to-day performance.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-white mb-2">Technical Highlights</h2>
+      <ul class="list-disc list-inside text-gray-300 mb-8">
+        <li>Ryzen 9 9950X3D + RTX 5090 + 96GB DDR5-6400</li>
+        <li>Custom airflow & cable routing in Lian Li 217</li>
+        <li>XMP profile tuning + BIOS max bandwidth config</li>
+        <li>OCCT stress test passed for rock-solid stability</li>
+      </ul>
+
+
+      <a href="index.html#projects"
+         class="inline-block bg-blue-400 hover:bg-blue-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition">
+        ← Back to Projects
+      </a>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

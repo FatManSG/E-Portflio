@@ -97,8 +97,13 @@
             </a>
           </div>
         </div>
-        <div class="md:w-1/2 flex justify-center">
+        <div class="md:w-1/2 flex flex-col items-center">
           <img src="assets/images/PFP2.jpg" alt="Mattias Lee" class="w-64 h-64 rounded-full object-cover border-4 border-blue-400">
+          <p class="mt-4 font-medium text-2xl flex items-center gap-2">
+          <span class="flame">🔥</span>
+          <span class="switch-colors">AI Engineer + Gym Rat + Foodie</span>
+          <span class="flame">🔥</span>
+          </p>
         </div>
       </div>
     </section>
@@ -112,63 +117,54 @@
         <!-- Programming -->
         <div class="flex-1 text-center">
             <!-- Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <span class="iconify w-12 h-12 mx-auto mb-4 text-blue-400"
+                  data-icon="mdi:code-tags">
+            </span>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M7.5 18.5L2 12l5.5-6.5M16.5 18.5L22 12l-5.5-6.5" />
             </svg>
             <h3 class="text-2xl font-semibold mb-4 text-white">Programming</h3>
             <!-- Individual Skill Icons / Pills -->
         <div class="flex flex-wrap justify-center gap-4 mt-4">
-          <span class="iconify w-6 h-6" data-icon="logos:python"></span>
-          <span class="iconify w-6 h-6" data-icon="logos:html-5"></span>
-          <span class="iconify w-6 h-6" data-icon="logos:css-3"></span>
-          <span class="iconify w-6 h-6" data-icon="logos:c-plusplus"></span>
+          <span class="iconify w-12 h-12" data-icon="logos:python"></span>
+          <span class="iconify w-12 h-12" data-icon="logos:html-5"></span>
+          <span class="iconify w-12 h-12" data-icon="logos:css-3"></span>
+          <span class="iconify w-12 h-12" data-icon="logos:c-plusplus"></span>
           <!-- PySpark fallback -->
-          <span class="w-6 h-6">
-            <img src="assets/images/pysparkicon.webp" alt="PySpark" class="w-6 h-6 object-contain" />
+          <span class="w-12 h-12">
+            <img src="assets/images/pysparkicon.png" alt="PySpark" class="w-12 h-12 object-contain" />
           </span>
-          <span class="iconify w-6 h-6" data-icon="logos:linux-tux"></span>
+          <span class="iconify w-12 h-12" data-icon="logos:linux-tux"></span>
         </div>
         </div>
 
         <!-- Data & Cloud -->
         <div class="flex-1 text-center">
             <!-- Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 4c-4.418 0-8 1.792-8 4v4c0 2.208 3.582 4 8 4s8-1.792 8-4V8c0-2.208-3.582-4-8-4z" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 16v1c0 2.208 3.582 4 8 4s8-1.792 8-4v-1" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 12v1c0 2.208 3.582 4 8 4s8-1.792 8-4v-1" />
-            </svg>
+            <span class="iconify w-12 h-12 mx-auto mb-4 text-blue-400"
+                  data-icon="mdi:database">
+            </span>
             <h3 class="text-2xl font-semibold mb-4 text-white">Data & Cloud</h3>
              <div class="flex flex-wrap justify-center gap-4 mt-4">
-          <span class="iconify w-6 h-6" data-icon="logos:mysql"></span>
-          <!-- RDS fallback -->
-          <span class="w-6 h-6">
-            <img src="assets/images/RDSicon.png" alt="PySpark" class="w-6 h-6 object-contain" />
+          <span class="iconify w-12 h-12" data-icon="logos:mysql"></span>
+          
+          
+          <span class="w-12 h-12">
+            <img src="assets/images/powerbiicon.png" alt="PowerBi" class="w-12 h-12 object-contain" />
           </span>
-          <!-- MQTT fallback -->
-          <span class="w-6 h-6">
-            <img src="assets/images/MQTTicon.png" alt="PySpark" class="w-6 h-6 object-contain" />
-          </span>
-          <span class="w-6 h-6">
-            <img src="assets/images/powerbiicon.png" alt="PySpark" class="w-6 h-6 object-contain" />
-          </span>
-          <span class="iconify w-6 h-6" data-icon="logos:aws"></span>
-          <span class="iconify w-6 h-6" data-icon="logos:microsoft-azure"></span>
+          <span class="w-12 h-12">
+            <img src="assets/images/AWSCloudicon.png" alt="AWS Cloud" class="w-12 h-12 object-contain" />
+          </span>          
+          <span class="iconify w-10 h-10" data-icon="logos:microsoft-azure"></span>
         </div>
         </div>
 
         <!-- Tools & Platforms -->
         <div class="flex-1 text-center">
             <!-- Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <circle cx="12" cy="12" r="3" stroke-width="2" stroke="currentColor" fill="none" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor"
-                d="M19.43 12.98c.04-.32.07-.66.07-1s-.03-.68-.07-1l1.84-1.43a.5.5 0 00.11-.64l-1.75-3.03a.5.5 0 00-.6-.22l-2.16.87a7.018 7.018 0 00-1.73-1l-.33-2.3A.5.5 0 0014.68 3h-3.36a.5.5 0 00-.5.43l-.33 2.3a7.018 7.018 0 00-1.73 1l-2.16-.87a.5.5 0 00-.6.22L2.62 8.91a.5.5 0 00.11.64L4.57 11c-.04.32-.07.66-.07 1s.03.68.07 1l-1.84 1.43a.5.5 0 00-.11.64l1.75 3.03a.5.5 0 00.6.22l2.16-.87c.53.44 1.12.8 1.73 1l.33 2.3c.04.26.25.43.5.43h3.36c.25 0 .46-.17.5-.43l.33-2.3a7.018 7.018 0 001.73-1l2.16.87a.5.5 0 00.6-.22l1.75-3.03a.5.5 0 00-.11-.64L19.43 12.98z" />
-            </svg>
+            <span class="iconify w-12 h-12 mx-auto mb-4 text-blue-400"
+                  data-icon="mdi:cog-outline">
+            </span>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M11.049 2.927c.3-1.14 1.92-1.14 2.22 0a1.756 1.756 0 002.05 1.131c1.132-.331 1.94.858 1.47 1.897a1.756 1.756 0 001.316 2.309c1.125.42 1.125 1.92 0 2.34a1.756 1.756 0 00-1.316 2.309c.47 1.04-.338 2.228-1.47 1.897a1.756 1.756 0 00-2.05 1.13c-.3 1.14-1.92 1.14-2.22 0a1.756 1.756 0 00-2.05-1.13c-1.132.331-1.94-.858-1.47-1.897a1.756 1.756 0 00-1.316-2.309c-1.125-.42-1.125-1.92 0-2.34a1.756 1.756 0 001.316-2.309c-.47-1.04.338-2.228 1.47-1.897.75.22 1.61-.12 2.05-1.13z" />
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -176,12 +172,19 @@
             </svg>
             <h3 class="text-2xl font-semibold mb-4 text-white">Tools & Platforms</h3>
         <div class="flex flex-wrap justify-center gap-4 mt-4">
-          <span class="iconify w-6 h-6" data-icon="logos:arduino"></span>
-          <span class="iconify w-6 h-6" data-icon="logos:raspberry-pi"></span>
-          <span class="iconify w-6 h-6" data-icon="logos:docker"></span>
-          <span class="iconify w-6 h-6" data-icon="logos:kubernetes"></span>
-          <span class="iconify w-6 h-6" data-icon="simple-icons:flask"></span>
-          <span class="iconify w-6 h-6" data-icon="logos:github-icon"></span>
+          <span class="iconify w-12 h-12" data-icon="logos:arduino"></span>
+          <span class="iconify w-12 h-12" data-icon="logos:raspberry-pi"></span>
+          <span class="iconify w-12 h-12" data-icon="logos:docker"></span>
+          <span class="iconify w-12 h-12" data-icon="logos:kubernetes"></span>
+          <span class="w-12 h-12">
+            <img
+              src="assets/images/minikubeicon.png"
+              alt="Minikube"
+              class="w-12 h-12 object-contain"
+            />
+          </span>
+          <span class="iconify w-12 h-12" data-icon="simple-icons:flask"></span>
+          <span class="iconify w-12 h-12" data-icon="logos:github-icon"></span>
         </div>
         </div>
         </div>
@@ -189,77 +192,88 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="py-20">
+    <section id="projects" class="py-20 reveal ">
       <div class="container mx-auto px-6">
         <h2 class="text-4xl font-bold text-center mb-12 text-white">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Project 1 -->
-          <div class="bg-blue-800 bg-opacity-50 p-6 rounded-lg transition transform hover:scale-105">
-            <img 
-                src="assets/images/DEP.png" 
-                alt="Arduino Air Quality Monitoring" 
-                class="w-full h-40 md:h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-2xl font-semibold mb-2 text-white">Arduino Air Quality Monitoring</h3>
-            <p class="text-sm text-gray-300 mb-4">Jul 2024</p>
-            <p class="text-gray-200">Me and my team developed a lab-environment monitoring system using Arduino microcontrollers, MQ/temperature/humidity sensors, and MQTT streaming into a MySQL backend. In Python (Jupyter) I parsed CSV exports, cleaned missing/duplicate readings, and engineered time-series features before publishing to a Power BI dashboard. The dashboard revealed weekend spikes in temperature and humidity—prompting a recommendation for weekend-only cooling interventions to protect equipment and personnel.</p>
-          </div>
-          <!-- Project 2 -->
-          <div class="bg-blue-800 bg-opacity-50 p-6 rounded-lg transition transform hover:scale-105">
-            <img 
-                src="assets/images/DPV.png" 
-                alt="Arduino Air Quality Monitoring" 
-                class="w-full h-40 md:h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-2xl font-semibold mb-2 text-white">Business Data Analysis Presentation</h3>
-            <p class="text-sm text-gray-300 mb-4">Jul 2024</p>
-            <p class="text-gray-200">I led the “Singapore Tourism Analysis” engagement, sourcing 2008–2023 arrival, spending, and demographic data from SingStat’s TableBuilder. Using Python (pandas/NumPy) I cleaned, normalized, and reshaped multiple tables, then visualized key insights in Power BI. We identified the 25–54 Y.O. age bracket (especially visitors from China, India, Malaysia, Indonesia), peak arrival months (Q3–Q4), and top spending category (hotels, 49% of accommodation) 
-. A low correlation (0.18) between arrivals and receipts signaled a “revenge tourism” effect—with higher per-capita spend post-pandemic—informing targeted promotions and dynamic pricing strategies to boost receipts further.</p>
-          </div>
-          <!-- Project 3 -->
-          <div class="bg-blue-800 bg-opacity-50 p-6 rounded-lg transition transform hover:scale-105">
-            <img 
-                src="assets/images/leafsensepfp.png" 
-                alt="Arduino Air Quality Monitoring" 
-                class="w-full h-40 md:h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-2xl font-semibold mb-2 text-white">Leaf Sense - Plant Disease Detection</h3>
-            <p class="text-sm text-gray-300 mb-4">Oct 2024</p>
-            <p class="text-gray-200">Me and 2 other teammates grouped together to build LeafSense, a responsive web app (HTML/CSS/JavaScript) that empowers farmers to diagnose crop diseases via computer vision. Uploaded leaf images are preprocessed with OpenCV (background masking) before being classified by a DenseNet121 model trained on 20 000+ samples. Results are returned in under 2 s, alongside an educational module detailing each disease and treatment. This solution targets early intervention, helping to mitigate yield losses and bolster food-security efforts in rural communities.</p>
-          </div>
-          <!-- Project 4 -->
-          <div class="bg-blue-800 bg-opacity-50 p-6 rounded-lg transition transform hover:scale-105">
-            <img 
-                src="assets/images/optiflow.png" 
-                alt="Arduino Air Quality Monitoring" 
-                class="w-full h-40 md:h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-2xl font-semibold mb-2 text-white">OptiFlow - IoT Crowd Control</h3>
-            <p class="text-sm text-gray-300 mb-4">Sep 2024</p>
-            <p class="text-gray-200">I designed and implemented OptiFlow with a team of 3, an end-to-end crowd-management prototype that uses a Raspberry Pi, ultrasonic distance sensors, an infrared Pi Camera running a YOLOv8 model, and servo-driven gates to dynamically regulate queues. Live foot-traffic counts from the camera and distance readings from the sensors feed into both an on-device LCD display and a Power BI dashboard for remote monitoring. The system autonomously opens/closes barriers based on density thresholds, demonstrating scalable, real-time congestion control and improving user flow and safety in high-traffic environments.</p>
-          </div>
-          <!-- Project 5 -->
-          <div class="bg-blue-800 bg-opacity-50 p-6 rounded-lg transition transform hover:scale-105">
-            <img 
-                src="assets/images/Fesi.png" 
-                alt="Arduino Air Quality Monitoring" 
-                class="w-full h-40 md:h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-2xl font-semibold mb-2 text-white">FESI-Crew - Repeat Buyer Classification</h3>
-            <p class="text-sm text-gray-300 mb-4">Apr 2025</p>
-            <p class="text-gray-200">I contributed to building a Dockerized ML pipeline that ingests and cleans raw Olist data, trains a Random Forest model, and packages everything for easy deployment. First, data engineers scripts in PySpark handled missing values, merged orders/reviews/delivery logs, and generated RFM and timing features. Next, a training module ran automated hyperparameter tuning with Optuna to optimize model performance, achieving a 0.92 F1 score on unseen data. Finally, the entire workflow—including the cleaning scripts, training code, and model artifact—was containerized in Docker, enabling one-click startup of the end-to-end pipeline.</p>
-          </div>
-          <!-- Project 6 -->
-          <div class="bg-blue-800 bg-opacity-50 p-6 rounded-lg transition transform hover:scale-105">
-            <img 
-                src="assets/images/PCbuilding.jpg" 
-                alt="Arduino Air Quality Monitoring" 
-                class="w-full h-40 md:h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-2xl font-semibold mb-2 text-white">High-End PC Build – Performance Workstation</h3>
-            <p class="text-sm text-gray-300 mb-4">Jun 2025</p>
-            <p class="text-gray-200">I did a end-to-end assembly and tuning of a custom workstation engineered for machine-learning model training and everyday productivity. The system is built around an AMD Ryzen 9 9950X3D CPU paired with an NVIDIA RTX 5090 GPU, 96 GB of DDR5-6400 RAM running at full XMP profiles, on an ASUS ROG Strix X870E-E Gaming WiFi (AM5) motherboard, all powered by a Corsair HXi 1500 W PSU housed in a Lian Li O11 Airflow 217 chassis. I optimized cable routing and case airflow for efficient cooling, resolved an initial Windows boot failure via a clean USB reinstall, and enabled maximum memory bandwidth in the BIOS. Finally, I validated rock-solid reliability under sustained full-load conditions using OCCT stress tests. The result is a stable, high-throughput platform that accelerates intensive training jobs and delivers seamless day-to-day performance.</p>
-          </div>
+          <a href="arduino-air-quality.html" class="block reveal">
+            <!-- Project 1 -->
+            <div class="bg-blue-800 bg-opacity-50 p-6 rounded-lg transition transform hover:scale-105">
+              <img 
+                  src="assets/images/DEP.png" 
+                  alt="Arduino Air Quality Monitoring" 
+                  class="w-full h-40 md:h-48 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-2xl font-semibold mb-2 text-white">Arduino Air Quality Monitoring</h3>
+              <p class="text-sm text-gray-300 mb-4">Jul 2024</p>
+              <p class="text-gray-200">Built a lab monitor using Arduino sensors and MQTT to MySQL. Parsed, cleaned, and visualized time-series data in Power BI to suggest cooling strategies for equipment protection.</p>
+            </div>
+          </a>
+          <a href="tourism-analysis.html" class="block reveal">
+            <!-- Project 2 -->
+            <div class="bg-blue-800 bg-opacity-50 p-6 rounded-lg transition transform hover:scale-105">
+              <img 
+                  src="assets/images/DPV.png" 
+                  alt="Arduino Air Quality Monitoring" 
+                  class="w-full h-40 md:h-48 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-2xl font-semibold mb-2 text-white">Business Data Analysis Presentation</h3>
+              <p class="text-sm text-gray-300 mb-4">Jul 2024</p>
+              <p class="text-gray-200">Led a data analysis on Singapore tourism using Python and Power BI. Revealed age and season-based spending trends and suggested pricing strategies based on “revenge tourism” behavior.</p>
+            </div>
+          </a>
+          <a href="leafsense.html" class="block reveal">
+            <!-- Project 3 -->
+            <div class="bg-blue-800 bg-opacity-50 p-6 rounded-lg transition transform hover:scale-105">
+              <img 
+                  src="assets/images/leafsensepfp.png" 
+                  alt="Arduino Air Quality Monitoring" 
+                  class="w-full h-40 md:h-48 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-2xl font-semibold mb-2 text-white">Leaf Sense - Plant Disease Detection</h3>
+              <p class="text-sm text-gray-300 mb-4">Oct 2024</p>
+              <p class="text-gray-200">Created a web app using OpenCV and DenseNet to detect plant diseases in seconds. Built to assist farmers with rapid diagnosis and treatment guidance for better crop health.</p>
+            </div>
+          </a>
+          <a href="optiflow.html" class="block reveal">
+            <!-- Project 4 -->
+            <div class="bg-blue-800 bg-opacity-50 p-6 rounded-lg transition transform hover:scale-105">
+              <img 
+                  src="assets/images/optiflow.png" 
+                  alt="Arduino Air Quality Monitoring" 
+                  class="w-full h-40 md:h-48 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-2xl font-semibold mb-2 text-white">OptiFlow - IoT Crowd Control</h3>
+              <p class="text-sm text-gray-300 mb-4">Sep 2024</p>
+              <p class="text-gray-200">Designed a Raspberry Pi–based queue control system with YOLOv8 and sensors. Automated barrier control and real-time dashboard enabled smoother flow in high-traffic zone.</p>
+            </div>
+          </a>
+          <a href="fesi-crew.html" class="block reveal">
+            <!-- Project 5 -->
+            <div class="bg-blue-800 bg-opacity-50 p-6 rounded-lg transition transform hover:scale-105">
+              <img 
+                  src="assets/images/Fesi.png" 
+                  alt="Arduino Air Quality Monitoring" 
+                  class="w-full h-40 md:h-48 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-2xl font-semibold mb-2 text-white">FESI-Crew - Repeat Buyer Classification</h3>
+              <p class="text-sm text-gray-300 mb-4">Apr 2025</p>
+              <p class="text-gray-200">Built a Dockerized ML pipeline with PySpark and Random Forest to classify repeat buyers. Achieved 0.92 F1 score, with full deployment-ready containerized setup.</p>
+            </div>
+          </a>
+          <a href="pc-build.html" class="block reveal">
+            <!-- Project 6 -->
+            <div class="bg-blue-800 bg-opacity-50 p-6 rounded-lg transition transform hover:scale-105">
+              <img 
+                  src="assets/images/PCbuilding.jpg" 
+                  alt="Arduino Air Quality Monitoring" 
+                  class="w-full h-40 md:h-48 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-2xl font-semibold mb-2 text-white">High-End PC Build – Performance Workstation</h3>
+              <p class="text-sm text-gray-300 mb-4">Jun 2025</p>
+              <p class="text-gray-200">Built and tuned a custom ML workstation with High-End components. Optimized BIOS, airflow, and validated performance for reliability under heavy loads.</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>

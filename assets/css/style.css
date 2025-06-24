@@ -76,3 +76,45 @@ nav a.active {
 html {
   scroll-behavior: smooth;
 }
+
+/* Slower fade+slide-up on scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  will-change: opacity, transform;
+  transition:
+    opacity 1.0s ease-out,                   /* fade over 1s */
+    transform 1.0s cubic-bezier(0.16,1,0.3,1) /* slide-up over 1s */
+  /* optional: add a small delay so it feels extra smooth */
+  /* transition-delay: 0.1s; */
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* — Color-cycle animation for the tagline text — */
+.switch-colors {
+  animation: color-cycle 6s linear infinite;
+}
+@keyframes color-cycle {
+  0%   { color: #F87171; } /* red-400 */
+  20%  { color: #34D399; } /* emerald-400 */
+  40%  { color: #60A5FA; } /* blue-400 */
+  60%  { color: #FBBF24; } /* yellow-400 */
+  80%  { color: #A78BFA; } /* violet-400 */
+  100% { color: #F87171; }
+}
+
+/* — Flicker animation for the flames — */
+.flame {
+  display: inline-block;
+  animation: flicker 0.15s infinite;
+}
+@keyframes flicker {
+  0%, 100% { opacity: 1; transform: rotate(0deg) scale(1); }
+  50%      { opacity: 0.6; transform: rotate(10deg) scale(1.2); }
+}
+
+

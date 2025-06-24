@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OptiFlow – Project Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="assets/css/style.css" rel="stylesheet"/>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <!-- Header / Nav (copy from index.html) -->
+  <header class="fixed top-0 w-full z-50 bg-opacity-80 backdrop-blur-md">
+    <div class="container mx-auto flex items-center justify-between p-6">
+      <a href="index.html#hero" class="text-2xl font-bold text-white">Mattias Lee</a>
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html#about"    class="text-gray-300 hover:text-blue-400">About</a>
+        <a href="index.html#skills"   class="text-gray-300 hover:text-blue-400">Skills</a>
+        <a href="index.html#projects" class="text-gray-300 hover:text-blue-400">Projects</a>
+        <a href="index.html#contact"  class="text-gray-300 hover:text-blue-400">Contact</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden text-gray-300 focus:outline-none">
+        <!-- mobile menu icon -->
+      </button>
+    </div>
+  </header>
+
+  <main class="pt-24">
+    <!-- Project Detail Section -->
+    <section class="py-20 container mx-auto px-6">
+
+      <h1 class="text-4xl font-bold text-white mb-4">Business Data Analysis</h1>
+      <p class="text-gray-300 mb-8">
+        Led a data analysis on Singapore tourism using Python and Power BI. Revealed age and season-based spending trends and suggested pricing strategies based on “revenge tourism” behavior.
+      </p>
+      <img src="assets/images/DPV.png" alt="Business Data Analysis screenshot" class="w-full rounded-lg mb-6"/>
+
+      <h2 class="text-2xl font-semibold text-white mb-2">Long Description</h2>
+      <p class="text-gray-300 mb-8">
+        I led the “Singapore Tourism Analysis” engagement, sourcing 2008–2023 arrival, spending, and demographic data from SingStat’s TableBuilder. Using Python (pandas/NumPy) I cleaned, normalized, and reshaped multiple tables, then visualized key insights in Power BI. We identified the 25–54 Y.O. age bracket (especially visitors from China, India, Malaysia, Indonesia), peak arrival months (Q3–Q4), and top spending category (hotels, 49% of accommodation) 
+. A low correlation (0.18) between arrivals and receipts signaled a “revenge tourism” effect—with higher per-capita spend post-pandemic—informing targeted promotions and dynamic pricing strategies to boost receipts further.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-white mb-2">Technical Highlights</h2>
+      <ul class="list-disc list-inside text-gray-300 mb-8">
+        <li>Cleaned and joined 2008–2023 data from SingStat TableBuilder</li>
+        <li>Used pandas/NumPy for reshaping and analysis</li>
+        <li>Power BI dashboards to reveal age and seasonal trends</li>
+      </ul>
+
+
+      <a href="index.html#projects"
+         class="inline-block bg-blue-400 hover:bg-blue-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition">
+        ← Back to Projects
+      </a>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

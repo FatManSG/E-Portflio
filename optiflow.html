@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OptiFlow – Project Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="assets/css/style.css" rel="stylesheet"/>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <!-- Header / Nav (copy from index.html) -->
+  <header class="fixed top-0 w-full z-50 bg-opacity-80 backdrop-blur-md">
+    <div class="container mx-auto flex items-center justify-between p-6">
+      <a href="index.html#hero" class="text-2xl font-bold text-white">Mattias Lee</a>
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html#about"    class="text-gray-300 hover:text-blue-400">About</a>
+        <a href="index.html#skills"   class="text-gray-300 hover:text-blue-400">Skills</a>
+        <a href="index.html#projects" class="text-gray-300 hover:text-blue-400">Projects</a>
+        <a href="index.html#contact"  class="text-gray-300 hover:text-blue-400">Contact</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden text-gray-300 focus:outline-none">
+        <!-- mobile menu icon -->
+      </button>
+    </div>
+  </header>
+
+  <main class="pt-24">
+    <!-- Project Detail Section -->
+    <section class="py-20 container mx-auto px-6">
+      <h1 class="text-4xl font-bold text-white mb-4">OptiFlow – IoT Crowd Control</h1>
+      <p class="text-gray-300 mb-8">
+        Designed and implemented OptiFlow with a team of 3, an end-to-end crowd-management prototype that uses Raspberry Pi, sensors, and YOLOv8 for smart traffic control with live dashboards.
+      </p>
+      <img src="assets/images/DEP.png" alt="OptiFlow screenshot" class="w-full rounded-lg mb-6"/>
+
+      <h2 class="text-2xl font-semibold text-white mb-2">Long Description</h2>
+      <p class="text-gray-300 mb-8">
+        I designed and implemented OptiFlow with a team of 3, an end-to-end crowd-management prototype that uses a Raspberry Pi, ultrasonic distance sensors, an infrared Pi Camera running a YOLOv8 model, and servo-driven gates to dynamically regulate queues. Live foot-traffic counts from the camera and distance readings from the sensors feed into both an on-device LCD display and a Power BI dashboard for remote monitoring. The system autonomously opens/closes barriers based on density thresholds, demonstrating scalable, real-time congestion control and improving user flow and safety in high-traffic environments.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-white mb-2">Technical Highlights</h2>
+      <ul class="list-disc list-inside text-gray-300 mb-8">
+        <li>YOLOv8 model on Raspberry Pi for foot traffic</li>
+        <li>Ultrasonic sensors + servo gate integration</li>
+        <li>LCD + Power BI real-time monitoring dashboards</li>
+      </ul>
+
+
+      <a href="index.html#projects"
+         class="inline-block bg-blue-400 hover:bg-blue-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition">
+        ← Back to Projects
+      </a>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

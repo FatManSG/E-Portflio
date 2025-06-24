@@ -42,15 +42,15 @@ if (navToggle) {
   });
 }
 
-// Optional: Scroll reveal for project cards
-const cards = document.querySelectorAll('.card-hover');
-const cardObserver = new IntersectionObserver((entries) => {
+// Scroll-reveal for any element with .reveal
+const revealElements = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries, obs) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('fade-in');
-      cardObserver.unobserve(entry.target);
+      entry.target.classList.add('show');
+      obs.unobserve(entry.target);
     }
   });
-}, { threshold: 0.2 });
+}, { threshold: 0.5 });
 
-cards.forEach(card => cardObserver.observe(card));
+revealElements.forEach(el => revealObserver.observe(el));
